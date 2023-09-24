@@ -4,32 +4,36 @@
             <div class="col-lg-4 listTester">
                 <div class="row">
                     <div class="col-lg-6 test" *ngFor="let list of listProfil">
-                        <img [src]="list.logo" class="img-fluid w-100" (click)="showTester(list.profil, list.identity, list.describe, list.facebookHref, list.xHref, list.twitchHref, list.youtubeHref, list.firstPositif)" alt="logoTester" />
+                        <img [src]="list.logo" class="img-fluid w-100" (click)="showTester(list.profil, list.identity, list.describe, list.facebookHref, list.xHref, list.twitchHref, list.youtubeHref, list.firstPositif)" />
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 aboutGoal">
-                <div class="containGoal" [style.display]="'show' ? 'none' : 'block'">
-                    <h2 class="about">A PROPOS DE WAY'S LIFE :</h2>
-                    <p>Le but de ce site est de trouver votre voie.</p>
-                </div>
-                <div class="containTester"  [style.display]="'show' ? 'block' : 'none'" *ngIf="details">
+            <div class="col-lg-8 aboutTester" *ngIf="details">
+                <div class="containTester"  [style.display]="'show' ? 'block' : 'none'" *ngIf="imgBackground">
                     <div class="row" >
-                        <div class="col-lg-4" >
-                            <img [src]="photo"  class="img-fluid w-100" />
+                        <div class="col-lg-4" [style.height]="imgBackground ? '250px' : '0px'" [style.maxWidth]="'imgBackground' ? '290px' : '0px'">
+                            <img [src]="photo" [style.height]="imgBackground? '250px' : '0px'" [style.maxWidth]="'imgBackground' ? '290px' : '0px'" class="img-fluid w-100" />
                         </div>
                         <div class="col-lg-8">
-                            <h1>{{name}}</h1>
-                            <p>{{story}}</p>
+                            <h1 class="nameGamer">{{name}}</h1>
+                            <p class="storyGamer">{{story}}</p>
+                            <div class="listHref" *ngIf="iconVisible">
+                                <div class="row">
+                                    <div class="col-lg-3 icon facebook">
+                                        <a [href]="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="col-lg-3 icon twitter">
+                                        <a [href]="x"><i class="fa-brands fa-x-twitter"></i></a>
+                                    </div>
+                                    <div class="col-lg-3 icon twitch">
+                                        <a [href]="twitch"><i class="fa-brands fa-twitch"></i></a>
+                                    </div>
+                                    <div class="col-lg-3 icon youtube">
+                                        <a [href]="youtube"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>    
+                            </div>
                         </div>
-                    </div>
-                    <div class="listHref">
-                        <div class="cardHref">
-                            <a [href]="facebook">{{facebook}}</a>
-                        </div>
-                        <div class="cardHref"><a [href]="x">{{x}}</a></div>
-                        <div class="cardHref"><a [href]="twitch">{{twitch}}</a></div>
-                        <div class="cardHref"><a [href]="youtube">{{youtube}}</a></div>
                     </div>
                 </div>
             </div>

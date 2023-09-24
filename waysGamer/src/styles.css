@@ -8,7 +8,9 @@ body {
 }
 
 .show {
-  height: 120%;
+  height: 100vh;
+  width: 100%;
+  margin-top: -20px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +20,7 @@ body {
 .heading {
   color: rgb(255, 255, 255);
   font-size: 1.9em;
-  margin-top: 10px;
+  margin-top: 20px;
   letter-spacing: 1px;
   font-family: emizen;
   margin-left: 10px;
@@ -40,8 +42,214 @@ body {
   border-radius: 20px;
   border: 0px solid black;
 }
+.present .containPresent .row .aboutTester {
+  margin-left: -60px;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-4 .img-fluid {
+  border-radius: 20px;
+  border: 0px solid black;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 {
+  margin-top: 25px;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .nameGamer {
+  font-size: 1.8em;
+  font-family: emizen;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .storyGamer {
+  height: 110px;
+  font-size: 1.6em;
+  overflow: auto;
+  font-family: olneyLigth;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .facebook {
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  max-width: 70px;
+  border: 1px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 40px;
+  border: 0px solid transparent;
+  background-color: darkblue;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .facebook .fa-brands {
+  font-size: 1.6em;
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .facebook .fa-brands .fa-facebook-f {
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitter {
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  max-width: 70px;
+  border: 1px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 40px;
+  border: 0px solid transparent;
+  background-color: black;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitter .fa-brands {
+  font-size: 1.6em;
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitter .fa-brands .fa-x-twitter {
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitch {
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  max-width: 70px;
+  border: 1px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 40px;
+  border: 0px solid transparent;
+  background-color: rgb(72, 0, 90);
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitch .fa-brands {
+  font-size: 1.6em;
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitch .fa-brands .fa-twitch {
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .youtube {
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  max-width: 70px;
+  border: 1px solid black;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 40px;
+  border: 0px solid transparent;
+  background-color: rgb(163, 13, 13);
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .youtube .fa-brands {
+  font-size: 1.6em;
+  color: azure;
+}
+.present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .youtube .fa-brands .fa-youtube {
+  color: azure;
+}
+
+.containTodoist {
+  margin: 20px auto;
+}
+.containTodoist .gameTodo {
+  color: azure;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: emizen;
+}
+.containTodoist .listInput {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.containTodoist .listInput input {
+  height: 30px;
+  padding: 8px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 10px;
+  font-family: olneyLigth;
+  border: 1px solid black;
+}
+.containTodoist .listInput #btnAdd {
+  border: transparent;
+  background: transparent;
+}
+.containTodoist .listInput #btnAdd .far {
+  font-size: 1.8em;
+  color: azure;
+}
+.containTodoist #btnClear {
+  position: relative;
+  top: 60%;
+  left: 46.5%;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  font-family: emizen;
+  border-radius: 10px;
+  color: azure;
+  background: darkgreen;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.containTodoist #btnClear:hover {
+  transform: scale(0.9);
+  background: transparent;
+}
+.containTodoist .showGame .detailGame .row {
+  text-align: center;
+}
+.containTodoist .showGame .detailGame .row .detail .info {
+  margin: 10px auto;
+  font-size: 1.6em;
+  color: azure;
+  font-family: emizen;
+  text-shadow: 2px 2px 2px #000000;
+}
+.containTodoist .showGame .detailGame .row .detail .info #btnDelete {
+  border: transparent;
+  background: transparent;
+}
+
+.footer {
+  position: absolute;
+  bottom: -2%;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+.footer .copyrigth {
+  font-size: 1.5em;
+  margin-top: 15px;
+  margin-left: 6px;
+  font-family: emizen;
+  color: azure;
+  letter-spacing: 1px;
+}
+.footer .send input {
+  max-width: 220px;
+  margin-right: 14px;
+}
+.footer .send .fa-solid {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+.footer .send .fa-solid .fa-arrow-right {
+  color: azure;
+}
 
 @font-face {
   font-family: emizen;
   src: url("/assets/fonts/emizen.ttf");
+}
+@font-face {
+  font-family: olneyLigth;
+  src: url("/assets/fonts/olneyligth.otf");
 }/*# sourceMappingURL=styles.css.map */

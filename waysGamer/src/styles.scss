@@ -9,9 +9,20 @@ body {
 
 // MIXIN & ROOT
 $firstColor: black;
+$secondColor: azure;
+$firstFont: emizen;
+$secondFont: olneyLigth;
+
+@mixin flex ($flexDirection) {
+    display: flex;
+    align-items: center;
+    flex-direction: $flexDirection;
+}
 
 .show {
-    height: 120%;
+    height: 100vh;
+    width: 100%;
+    margin-top: -20px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,9 +31,9 @@ $firstColor: black;
 .heading {
     color: rgb(255, 255, 255);
     font-size: 1.9em;
-    margin-top: 10px;
+    margin-top: 20px;
     letter-spacing: 1px;
-    font-family: emizen;
+    font-family: $firstFont;
     margin-left: 10px;
 }
 
@@ -45,11 +56,231 @@ $firstColor: black;
                     }
                 }
             }
+            .aboutTester {
+                margin-left: -60px;
+                .containTester {
+                    .row {
+                        .col-lg-4 {
+                            .img-fluid {
+                                border-radius: 20px;
+                                border: 0px solid black;
+                            }
+                        }
+                        .col-lg-8 {
+                            margin-top: 25px;
+                            .nameGamer {
+                                font-size: 1.8em;
+                                font-family: $firstFont;
+                            }
+                            .storyGamer {
+                                height: 110px;
+                                font-size: 1.6em;
+                                overflow: auto;
+                                font-family: $secondFont;
+                            }
+                            .listHref {
+                                justify-content: center;
+                                @include flex (row);
+                                .row {
+                                    .facebook {
+                                        padding: 5px;
+                                        text-align: center;
+                                        width: 120px;
+                                        max-width: 70px;
+                                        border: 1px solid black;
+                                        margin-left: 30px;
+                                        margin-right: 30px;
+                                        border-radius: 40px;
+                                        border: 0px solid transparent;
+                                        background-color: darkblue;
+                                        .fa-brands {
+                                            font-size: 1.6em;
+                                            color: $secondColor;
+                                            .fa-facebook-f {
+                                                color: $secondColor;
+                                            }
+                                        }
+                                    }
+                                    .twitter {
+                                        padding: 5px;
+                                        text-align: center;
+                                        width: 120px;
+                                        max-width: 70px;
+                                        border: 1px solid black;
+                                        margin-left: 30px;
+                                        margin-right: 30px;
+                                        border-radius: 40px;
+                                        border: 0px solid transparent;
+                                        background-color: black;
+                                        .fa-brands {
+                                            font-size: 1.6em;
+                                            color: $secondColor;
+                                            .fa-x-twitter {
+                                                color: $secondColor;
+                                            }
+                                        }
+                                    }
+                                    .twitch {
+                                        padding: 5px;
+                                        text-align: center;
+                                        width: 120px;
+                                        max-width: 70px;
+                                        border: 1px solid black;
+                                        margin-left: 30px;
+                                        margin-right: 30px;
+                                        border-radius: 40px;
+                                        border: 0px solid transparent;
+                                        background-color: rgb(72, 0, 90);
+                                        .fa-brands {
+                                            font-size: 1.6em;
+                                            color: $secondColor;
+                                            .fa-twitch {
+                                                color: $secondColor;
+                                            }
+                                        }
+                                    }
+                                    .youtube {
+                                        padding: 5px;
+                                        text-align: center;
+                                        width: 120px;
+                                        max-width: 70px;
+                                        border: 1px solid black;
+                                        margin-left: 30px;
+                                        margin-right: 30px;
+                                        border-radius: 40px;
+                                        border: 0px solid transparent;
+                                        background-color: rgb(163, 13, 13);
+                                        .fa-brands {
+                                            font-size: 1.6em;
+                                            color: $secondColor;
+                                            .fa-youtube {
+                                                color: $secondColor;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
+.containTodoist {
+    margin: 20px auto;
+    .gameTodo {
+        color: $secondColor;
+        font-size: 2.5em;
+        text-align: center;
+        font-family: emizen;
+    }
+    .listInput {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        input {
+            height: 30px;
+            padding: 8px;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            padding-bottom: 12px;
+            text-align: center;
+            margin-right: 15px;
+            margin-left: 15px;
+            border-radius: 10px;
+            font-family: $secondFont;
+            border: 1px solid black;
+        }
+        #btnAdd {
+                border: transparent;
+                background: transparent;
+                .far {
+                    font-size: 1.8em;
+                    color: $secondColor;
+                }
+            }
+    }
+    #btnClear {
+        position: relative;
+        top: 60%;
+        left: 46.5%;
+        letter-spacing: 2px;
+        font-size: 1.5em;
+        font-family: $firstFont;
+        border-radius: 10px;
+        color: $secondColor;
+        background: darkgreen;
+        border: 2px solid $secondColor;
+        transition: all 0.25ms ease;
+        &:hover {
+            transform: scale(0.9);
+            background: transparent;
+        }
+    }
+    .showGame {
+        .detailGame {
+            .row {
+                text-align: center;
+                .detail {
+                    .info {
+                        margin: 10px auto;
+                        font-size: 1.6em;
+                        color: $secondColor;
+                        font-family: $firstFont;
+                        text-shadow: 2px 2px 2px #000000;
+                        #btnDelete {
+                            border: transparent;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: -2%;
+    left: 0%;
+    width: 100%;
+    @include flex (row);
+    justify-content: space-between;
+    background-color: black;
+    .copyrigth {
+        font-size: 1.5em;
+        margin-top: 15px;
+        margin-left: 6px;
+        font-family: $firstFont;
+        color: $secondColor;
+        letter-spacing: 1px;
+    }
+    .send {
+        input {
+            max-width: 220px;
+            margin-right: 14px;
+        }
+        .fa-solid {
+                position: absolute;
+                top: 50%;
+                right: 1%;
+                transform: translateY(-50%);
+                .fa-arrow-right {
+                    color: $secondColor;
+                }
+            }
+    }
+}
+
 @font-face {
-    font-family: emizen;
+    font-family: $firstFont;
     src: url('/assets/fonts/emizen.ttf');
+}
+
+@font-face {
+    font-family: $secondFont;
+    src: url('/assets/fonts/olneyligth.otf');
 }

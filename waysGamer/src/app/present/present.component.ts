@@ -41,7 +41,7 @@ export class PresentComponent implements OnInit {
       profil: '/assets/picts/nostalgeekProfil.jpg',
       identity: 'NostalGeek (Youtubeur)',
       describe:
-        'NostalGeek est un youtuber portant sur la philosophie des jeux vidéos (des messages, des morals, à qui s’adresse t-ils) avec de belle effet de montages, de plans magnifiques.',
+        'NostalGeek est un youtuber portant sur la philosophie des jeux vidéos (des messages, des morals, à qui s’adressent t-ils) avec de belle effet de montages, de plans magnifiques.',
       facebookHref: '',
       xHref: 'twitter.com/nostalgeek_yt',
       twitchHref: 'twitch.tv/nostalive',
@@ -105,6 +105,9 @@ export class PresentComponent implements OnInit {
   details: Array<any> = [];
   show: boolean = false;
 
+  iconVisible: boolean = false;
+  imgBackground: boolean = false;
+
   showTester(profil: string, identity: string, describe: string, facebookHref: string, xHref: string, twitchHref: string, youtubeHref: string, firstPositif: string) {
      this.photo = profil;
      this.name = identity;
@@ -115,6 +118,8 @@ export class PresentComponent implements OnInit {
      this.youtube = youtubeHref;
      this.positif = firstPositif;
      this.show = true;
+     this.iconVisible = true;
+     this.imgBackground = true;
   }
 
   ngOnInit(): void {
