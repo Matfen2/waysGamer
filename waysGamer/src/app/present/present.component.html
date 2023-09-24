@@ -1,0 +1,38 @@
+<div class="present">
+    <div class="containPresent">
+        <div class="row">
+            <div class="col-lg-4 listTester">
+                <div class="row">
+                    <div class="col-lg-6 test" *ngFor="let list of listProfil">
+                        <img [src]="list.logo" class="img-fluid w-100" (click)="showTester(list.profil, list.identity, list.describe, list.facebookHref, list.xHref, list.twitchHref, list.youtubeHref, list.firstPositif)" alt="logoTester" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 aboutGoal">
+                <div class="containGoal" [style.display]="'show' ? 'none' : 'block'">
+                    <h2 class="about">A PROPOS DE WAY'S LIFE :</h2>
+                    <p>Le but de ce site est de trouver votre voie.</p>
+                </div>
+                <div class="containTester"  [style.display]="'show' ? 'block' : 'none'" *ngIf="details">
+                    <div class="row" >
+                        <div class="col-lg-4" >
+                            <img [src]="photo"  class="img-fluid w-100" />
+                        </div>
+                        <div class="col-lg-8">
+                            <h1>{{name}}</h1>
+                            <p>{{story}}</p>
+                        </div>
+                    </div>
+                    <div class="listHref">
+                        <div class="cardHref">
+                            <a [href]="facebook">{{facebook}}</a>
+                        </div>
+                        <div class="cardHref"><a [href]="x">{{x}}</a></div>
+                        <div class="cardHref"><a [href]="twitch">{{twitch}}</a></div>
+                        <div class="cardHref"><a [href]="youtube">{{youtube}}</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

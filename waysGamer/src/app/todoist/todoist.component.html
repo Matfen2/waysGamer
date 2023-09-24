@@ -1,0 +1,17 @@
+<div class="containTodoist">
+    <h2 class="gameTodo">Jeux à faire :</h2>
+    <div class="listInput">
+        <input type="text" placeholder="Titre" [(ngModel)]="title" />
+        <input type="text" placeholder="Type" [(ngModel)]="type" />
+        <input type="text" placeholder="Studio" [(ngModel)]="studio" />
+        <button type="button" id="btnAdd" (click)="addGame()"><i class="far fa-plus-square"></i></button>
+    </div>
+
+    <button type="button" id="btnClear" id="btnClear" (click)="clearGame()">RECOMMENCER</button>
+
+    <div class="showGame" *ngIf="games">
+        <div class="detailGame" *ngFor="let game of games, let i = index">
+            <p>"{{game.title}} est un jeu {{game.type}} développé par {{game.studio}}" <button type="button" id="btnDelete" (click)="deleteGame(i)"><i class="fa-solid fa-trash"></i></button></p>
+        </div>
+    </div>
+</div>
