@@ -3,16 +3,16 @@
         <div class="row">
             <div class="col-lg-4 listTester">
                 <div class="row">
-                    <div class="col-lg-6 test" *ngFor="let list of listProfil">
-                        <img [src]="list.logo" class="img-fluid w-100" (click)="showTester(list.profil, list.identity, list.describe, list.facebookHref, list.xHref, list.twitchHref, list.youtubeHref, list.firstPositif)" />
+                    <div class="col-lg-4 test" *ngFor="let list of listProfil">
+                        <img [src]="list.logo" class="img-fluid w-100" (click)="showTester(list.profil, list.identity, list.describe, list.facebookHref, list.xHref, list.twitchHref, list.youtubeHref, list.firstPositif, list.firstVideo, list.secondVideo, list.thirdVideo, list.hrefFirst, list.hrefSecond, list.hrefThird)" />
                     </div>
                 </div>
             </div>
             <div class="col-lg-8 aboutTester" *ngIf="details">
                 <div class="containTester"  [style.display]="'show' ? 'block' : 'none'" *ngIf="imgBackground">
                     <div class="row" >
-                        <div class="col-lg-4" [style.height]="imgBackground ? '250px' : '0px'" [style.maxWidth]="'imgBackground' ? '290px' : '0px'">
-                            <img [src]="photo" [style.height]="imgBackground? '250px' : '0px'" [style.maxWidth]="'imgBackground' ? '290px' : '0px'" class="img-fluid w-100" />
+                        <div class="col-lg-4" [style.height]="imgBackground ? '260px' : '0px'" [style.maxWidth]="'imgBackground' ? '290px' : '0px'">
+                            <img [src]="photo" [style.height]="imgBackground? '260px' : '0px'" [style.maxWidth]="'imgBackground' ? '290px' : '0px'" class="img-fluid w-100" />
                         </div>
                         <div class="col-lg-8">
                             <h1 class="nameGamer">{{name}}</h1>
@@ -34,6 +34,26 @@
                                 </div>    
                             </div>
                         </div>
+                        <div class="listVideo">
+                                <div class="row">
+                                    <div class="col-lg-4 video">
+                                        <a [href]="firstHref">
+                                            <img [src]="firstMove" class="img-fluid w-100"  appShow/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 video">
+                                        <a [href]="secondHref">
+                                            <img [src]="secondMove" class="img-fluid w-100"  appShow/>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 video">
+                                        <a [href]="thirdHref">
+                                            <img [src]="thirdMove" class="img-fluid w-100"  appShow/>
+                                        </a>
+                                    </div>
+                                  
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>

@@ -20,6 +20,12 @@ export class PresentComponent implements OnInit {
       youtubeHref: 'https://www.youtube.com/@Gagzzz82/featured',
       firstPositif:
         'des débats avec d’autres acteur de l’industrie de JV (Aymar Azaiza, Christophe Carrier)',
+      firstVideo: '/assets/picts/video/gagzzzFirst.jpg',
+      secondVideo: '/assets/picts/video/gagzzzSecond.jpg',
+      thirdVideo: '/assets/picts/video/gagzzzThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=pIn7gtv1pYA&t=56s',
+      hrefSecond: 'https://www.youtube.com/watch?v=uUPhlWus4f4&t=10s',
+      hrefThird: 'https://www.youtube.com/watch?v=3UMi8ozjkcU',
     },
     {
       id: 2,
@@ -34,6 +40,12 @@ export class PresentComponent implements OnInit {
       youtubeHref: 'https://www.youtube.com/@MonsieurPlouf/featured',
       firstPositif:
         'des critiques, des débats sous forme de dessin et une continuité dans l’histoire du personnage de Monsieur Plouf, Madame Plouf et leur fille',
+      firstVideo: '/assets/picts/video/monsieurPloufFirst.jpg',
+      secondVideo: '/assets/picts/video/monsieurPloufSecond.jpg',
+      thirdVideo: '/assets/picts/video/monsieurPloufThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=-wVwf61N15Q&t=552s',
+      hrefSecond: 'https://www.youtube.com/watch?v=ejaGPBASBIE',
+      hrefThird: 'https://www.youtube.com/watch?v=HIhTUDXojKo',
     },
     {
       id: 3,
@@ -48,6 +60,12 @@ export class PresentComponent implements OnInit {
       youtubeHref: 'https://www.youtube.com/@NostalGeekYT/featured',
       firstPositif:
         'une analyse plus ou moins profonde sur la manière dont sont structurés les jeux.',
+      firstVideo: '/assets/picts/video/nostalGeekFirst.jpg',
+      secondVideo: '/assets/picts/video/nostalGeekSecond.jpg',
+      thirdVideo: '/assets/picts/video/nostalGeekThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=vQKBl2er32o',
+      hrefSecond: 'https://www.youtube.com/watch?v=oQRRdnzvNXg',
+      hrefThird: 'https://www.youtube.com/watch?v=8EEJvzso6_A&t=741s',
     },
     {
       id: 4,
@@ -62,6 +80,12 @@ export class PresentComponent implements OnInit {
       youtubeHref: 'https://www.youtube.com/@GameNextDoor01/featured',
       firstPositif:
         'Fin Du Game : un audio test crée en collaboration avec Exserv',
+      firstVideo: '/assets/picts/video/gameNextDoorFirst.jpg',
+      secondVideo: '/assets/picts/video/gameNextDoorSecond.jpg',
+      thirdVideo: '/assets/picts/video/gameNextDoorThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=zukUIwy8siI',
+      hrefSecond: 'https://www.youtube.com/watch?v=ZRem0Na5kCE',
+      hrefThird: 'https://www.youtube.com/watch?v=E967mkryOtc',
     },
     {
       id: 5,
@@ -76,6 +100,12 @@ export class PresentComponent implements OnInit {
       youtubeHref: 'https://www.youtube.com/@ExServ85/featured',
       firstPositif:
         'Fin Du Game : un audio test crée en collaboration avec Game Next Door',
+      firstVideo: '/assets/picts/video/exservFirst.jpg',
+      secondVideo: '/assets/picts/video/exservSecond.jpg',
+      thirdVideo: '/assets/picts/video/exservThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=gc8D_NG7cxs&t=1s',
+      hrefSecond: 'https://www.youtube.com/watch?v=K8t8s-r1328&t=53s',
+      hrefThird: 'https://www.youtube.com/watch?v=DQV3P4649og',
     },
     {
       id: 6,
@@ -90,6 +120,72 @@ export class PresentComponent implements OnInit {
       youtubeHref: 'https://www.youtube.com/@Sheshounet/featured',
       firstPositif:
         'Critiques des test des journalistes spécialisés dans le gaming (JeuxVideo.com, Jeuxactu, Gameblog)',
+      firstVideo: '/assets/picts/video/sheshounetFirst.jpg',
+      secondVideo: '/assets/picts/video/sheshounetSecond.jpg',
+      thirdVideo: '/assets/picts/video/sheshounetThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=uxtprgjSh5w&t=54s',
+      hrefSecond: 'https://www.youtube.com/watch?v=L2GVD4LRuMM&t=1s',
+      hrefThird: 'https://www.youtube.com/watch?v=bFuE57vvvDQ',
+    },
+    {
+      id: 7,
+      logo: '/assets/picts/toujoursThomasLogo.jpg',
+      profil: '/assets/picts/toujoursThomasLogo.jpg',
+      identity: 'Toujours Thomas (Youtubeur)',
+      describe:
+        'Faire des tests les plus objectifs de l’univers, telle est la mission de Sheshounet, avec plus de classes, de gros mots, du cu et de la violence avec de l’humour bien senti',
+      facebookHref: '',
+      xHref: 'twitter.com/toujoursthomas',
+      twitchHref: 'https://www.twitch.tv/toujours_thomas',
+      youtubeHref: 'https://www.youtube.com/@Toujours_Thomas/featured',
+      firstPositif:
+        'Critiques des test des journalistes spécialisés dans le gaming (JeuxVideo.com, Jeuxactu, Gameblog)',
+      firstVideo: '/assets/picts/video/toujoursThomasFirst.jpg',
+      secondVideo: '/assets/picts/video/toujoursThomasSecond.jpg',
+      thirdVideo: '/assets/picts/video/toujoursThomasThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=VQGkX6ot490',
+      hrefSecond: 'https://www.youtube.com/watch?v=tDTSpZuwt7U',
+      hrefThird: 'https://www.youtube.com/watch?v=MROxCSB5Cpc',
+    },
+    {
+      id: 8,
+      logo: '/assets/picts/pseudoLessLogo.jpg',
+      profil: '/assets/picts/pseudoLessProfil.jpg',
+      identity: 'PseudoLess (Youtubeur)',
+      describe:
+        'Faire des tests les plus objectifs de l’univers, telle est la mission de Sheshounet, avec plus de classes, de gros mots, du cu et de la violence avec de l’humour bien senti',
+      facebookHref: 'https://www.facebook.com/pseudoless.ichi?locale=fr_FR',
+      xHref: 'twitter.com/PsEuDoLeSs_1',
+      twitchHref: 'https://www.twitch.tv/pseudoless_1',
+      youtubeHref: 'https://www.youtube.com/@PsEuDoLeSs1/featured',
+      firstPositif:
+        'Critiques des test des journalistes spécialisés dans le gaming (JeuxVideo.com, Jeuxactu, Gameblog)',
+      firstVideo: '/assets/picts/video/pseudolessFirst.jpg',
+      secondVideo: '/assets/picts/video/pseudolessSecond.jpg',
+      thirdVideo: '/assets/picts/video/pseudolessThrid.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=ntcnzl1i9_c',
+      hrefSecond: 'https://www.youtube.com/watch?v=TL9FbpVqYV4',
+      hrefThird: 'https://www.youtube.com/watch?v=Gxly2JD3Ggk',
+    },
+    {
+      id: 9,
+      logo: '/assets/picts/iconoclasteLogo.jpg',
+      profil: '/assets/picts/iconoclasteProfil.jpg',
+      identity: 'Iconoclaste (Youtubeur)',
+      describe:
+        'Faire des tests les plus objectifs de l’univers, telle est la mission de Sheshounet, avec plus de classes, de gros mots, du cu et de la violence avec de l’humour bien senti',
+      facebookHref: 'https://www.facebook.com/liconoclaste/?locale=fr_FR',
+      xHref: 'twitter.com/iconoclaste_sp',
+      twitchHref: 'https://www.twitch.tv/ico_noclaste',
+      youtubeHref: 'https://www.youtube.com/@iconoclaste_sp/featured',
+      firstPositif:
+        'Critiques des test des journalistes spécialisés dans le gaming (JeuxVideo.com, Jeuxactu, Gameblog)',
+      firstVideo: '/assets/picts/video/iconoclasteFirst.jpg',
+      secondVideo: '/assets/picts/video/iconoclasteSecond.jpg',
+      thirdVideo: '/assets/picts/video/iconoclasteThird.jpg',
+      hrefFirst: 'https://www.youtube.com/watch?v=YM-dx29vyAc',
+      hrefSecond: 'https://www.youtube.com/watch?v=iznMK1VTP0A&t=1169s',
+      hrefThird: 'https://www.youtube.com/watch?v=iAeyO8BTTX0',
     },
   ];
 
@@ -102,24 +198,51 @@ export class PresentComponent implements OnInit {
   twitch: string = '';
   youtube: string = '';
   positif: string = '';
+  firstMove: string = '';
+  secondMove: string = '';
+  thirdMove: string = '';
+  firstHref: string = '';
+  secondHref: string = '';
+  thirdHref: string = '';
   details: Array<any> = [];
   show: boolean = false;
 
   iconVisible: boolean = false;
   imgBackground: boolean = false;
 
-  showTester(profil: string, identity: string, describe: string, facebookHref: string, xHref: string, twitchHref: string, youtubeHref: string, firstPositif: string) {
-     this.photo = profil;
-     this.name = identity;
-     this.story = describe;
-     this.facebook = facebookHref;
-     this.x = xHref;
-     this.twitch = twitchHref;
-     this.youtube = youtubeHref;
-     this.positif = firstPositif;
-     this.show = true;
-     this.iconVisible = true;
-     this.imgBackground = true;
+  showTester(
+    profil: string,
+    identity: string,
+    describe: string,
+    facebookHref: string,
+    xHref: string,
+    twitchHref: string,
+    youtubeHref: string,
+    firstPositif: string,
+    firstVideo: string,
+    secondVideo: string,
+    thirdVideo: string,
+    hrefFirst: string,
+    hrefSecond: string,
+    hrefThird: string
+  ) {
+    this.photo = profil;
+    this.name = identity;
+    this.story = describe;
+    this.facebook = facebookHref;
+    this.x = xHref;
+    this.twitch = twitchHref;
+    this.youtube = youtubeHref;
+    this.positif = firstPositif;
+    this.firstMove = firstVideo;
+    this.secondMove = secondVideo;
+    this.thirdMove = thirdVideo;
+    this.firstHref = hrefFirst;
+    this.secondHref = hrefSecond;
+    this.thirdHref = hrefThird;
+    this.show = true;
+    this.iconVisible = true;
+    this.imgBackground = true;
   }
 
   ngOnInit(): void {

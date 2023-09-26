@@ -44,12 +44,13 @@ $secondFont: olneyLigth;
                 margin-top: 30px;
                 .row {
                     margin-left: 40px;
-                    max-width: 260px;
+                    max-width: 390px;
                     .test {
-                        height: 180px;
+                        height: 220px;
                         margin-bottom: -50px;
                         .img-fluid {
-                            height: 100px;
+                            height: 130px;
+                            cursor: pointer;
                             border-radius: 20px;
                             border: 0px solid $firstColor;
                         }
@@ -57,6 +58,7 @@ $secondFont: olneyLigth;
                 }
             }
             .aboutTester {
+                margin-top: 50px;
                 margin-left: -60px;
                 .containTester {
                     .row {
@@ -162,6 +164,25 @@ $secondFont: olneyLigth;
 
                             }
                         }
+                        .listVideo {
+                            margin-top: 30px;
+                            .row {
+                                margin: 2px auto;
+                                max-width: 1200px;
+                                margin-right: 120px;
+                                .video {
+                                   cursor: pointer;
+                                    a {
+                                        .img-fluid {
+                                            border-radius: 20px;
+                                            border: 0px solid $firstColor;
+                                            height: 190px;
+                                            max-width: 360px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -221,6 +242,8 @@ $secondFont: olneyLigth;
         }
     }
     .showGame {
+        overflow-y: auto;
+        max-height: 200px;
         .detailGame {
             .row {
                 text-align: center;
@@ -244,8 +267,9 @@ $secondFont: olneyLigth;
 
 .footer {
     position: absolute;
-    bottom: -2%;
+    bottom: -1.6%;
     left: 0%;
+    height: 6vh;
     width: 100%;
     @include flex (row);
     justify-content: space-between;

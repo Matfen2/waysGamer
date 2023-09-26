@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { PresentComponent } from './present/present.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodoistComponent } from './todoist/todoist.component';
+import { ShowDirective } from './show.directive';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TodoistComponent } from './todoist/todoist.component';
     PresentComponent,
     FooterComponent,
     TodoistComponent,
+    ShowDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
