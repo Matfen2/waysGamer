@@ -28,6 +28,7 @@ $secondFont: olneyLigth;
     background-repeat: no-repeat;
     background-image: url('assets/picts/waysGamerBackground.png');
 }
+
 .heading {
     color: rgb(255, 255, 255);
     font-size: 1.9em;
@@ -43,13 +44,14 @@ $secondFont: olneyLigth;
             .listTester {
                 margin-top: 30px;
                 .row {
-                    margin-left: 40px;
-                    max-width: 390px;
+                    margin-left: 10px;
+
                     .test {
                         height: 220px;
                         margin-bottom: -50px;
                         .img-fluid {
                             height: 130px;
+                            max-width: 160px;
                             cursor: pointer;
                             border-radius: 20px;
                             border: 0px solid $firstColor;
@@ -58,8 +60,8 @@ $secondFont: olneyLigth;
                 }
             }
             .aboutTester {
-                margin-top: 50px;
-                margin-left: -60px;
+                margin-top: 140px;
+                margin-right: -120px;
                 .containTester {
                     .row {
                         .col-lg-4 {
@@ -164,25 +166,6 @@ $secondFont: olneyLigth;
 
                             }
                         }
-                        .listVideo {
-                            margin-top: 30px;
-                            .row {
-                                margin: 2px auto;
-                                max-width: 1200px;
-                                margin-right: 120px;
-                                .video {
-                                   cursor: pointer;
-                                    a {
-                                        .img-fluid {
-                                            border-radius: 20px;
-                                            border: 0px solid $firstColor;
-                                            height: 190px;
-                                            max-width: 360px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
                     }
                 }
             }
@@ -243,7 +226,9 @@ $secondFont: olneyLigth;
     }
     .showGame {
         overflow-y: auto;
-        max-height: 200px;
+        overflow-x: auto;
+        width: 100%;
+        max-height: 160px;
         .detailGame {
             .row {
                 text-align: center;
@@ -288,14 +273,14 @@ $secondFont: olneyLigth;
             margin-right: 14px;
         }
         .fa-solid {
-                position: absolute;
-                top: 50%;
-                right: 1%;
-                transform: translateY(-50%);
-                .fa-arrow-right {
-                    color: $secondColor;
-                }
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            transform: translateY(-50%);
+            .fa-arrow-right {
+                color: $secondColor;
             }
+        }
     }
 }
 
@@ -307,4 +292,252 @@ $secondFont: olneyLigth;
 @font-face {
     font-family: $secondFont;
     src: url('/assets/fonts/olneyligth.otf');
+}
+
+@media screen and (max-width: 1440px) {
+    .present {
+        .containPresent {
+            .row {
+                .aboutTester {
+                    margin-top: 140px;
+                    margin-left: 20px;
+                    .containTester {
+                        .row {
+                            .listVideo {
+                                margin-top: 10px;
+                                .row {
+                                    margin: 2px auto;
+                                    margin-right: 80px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .containTodoist {
+        margin: -4px auto;
+        .showGame {
+            max-height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .present {
+        .containPresent {
+            .row {
+                .listTester {
+                    overflow-x: auto;
+                    max-height: 480px;
+                    max-width: 150px;
+                    .row {
+                        margin-left: 18px;
+                        .test {
+                            width: 300px;
+                            .img-fluid {
+                                height: 140px;
+                            }
+                        }
+                    }
+                }
+                .aboutTester {
+                    text-align: center;
+                    margin-top: 120px;
+                    margin-left: 60px;
+                    max-width: 1000px;
+                    .containTester {
+                        max-width: 1000px;
+                        .row {
+                            .col-lg-4 {
+                                .img-fluid {
+                                    height: 220px;
+                                    max-width: 120px;
+                                }
+                            }
+                            .col-lg-8 {
+                                .nameGamer {
+                                    font-size: 1.5em;
+                                }
+                                .storyGamer {
+                                    font-size: 1.4em;
+                                    margin-bottom: 4px;
+                                }
+                                .listHref {
+                                    margin-left: 8px;
+                                    .row {
+                                        .facebook, .twitter, .twitch, .youtube {
+                                            max-width: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                            .listVideo {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .containTodoist {
+        margin: -4px auto;
+        .listInput {
+            input {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            #btnAdd {
+                margin-right: 10px;
+            }
+        }
+        #btnClear {
+            margin: 10px auto;
+                left: 44.2%;
+            }
+        .showGame {
+            max-height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .present {
+        .containPresent {
+            .row {
+                .listTester {
+                    margin: auto;
+                    max-width: 490px;
+                    text-align: center;
+                    .row {
+                        margin: auto;
+                        overflow: auto;
+                        height: 280px;
+                        text-align: center;
+                        .test {
+                            margin: auto;
+                            text-align: center;
+                            margin-bottom: 80px;
+                            .img-fluid {
+                                height: 260px;
+                            }
+                        }
+                    }
+                }
+                .aboutTester {
+                    margin: -20px auto;
+                    .containTester {
+                        .row {
+                            .col-lg-4 {
+                                display: none;
+                                .img-fluid {
+                                    display: none;
+                                }
+                            }
+                            .col-lg-8 {
+                                text-align: center;
+                                .storyGamer {
+                                    margin-bottom: -2px;
+                                }
+                                .listHref {
+                                    padding-top: -20px;
+                                    padding-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .containTodoist {
+        margin: 10px auto;
+    }
+    .footer {
+        .send {
+            .fa-solid {
+                right: 3%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .present {
+        .containPresent {
+            .row {
+                .listTester {
+                    margin: auto;
+                    max-width: 490px;
+                    text-align: center;
+                    .row {
+                        margin: auto;
+                        overflow: auto;
+                        height: 280px;
+                        text-align: center;
+                        .test {
+                            margin: auto;
+                            text-align: center;
+                            margin-bottom: 80px;
+                            .img-fluid {
+                                height: 200px;
+                                max-width: 380px;
+                            }
+                        }
+                    }
+                }
+                .aboutTester {
+                    margin: -90px auto;
+                    .containTester {
+                        .row {
+                            .col-lg-4 {
+                                display: none;
+                                .img-fluid {
+                                    display: none;
+                                }
+                            }
+                            .col-lg-8 {
+                                text-align: center;
+                                .storyGamer {
+                                    margin-bottom: -2px;
+                                }
+                                .listHref {
+                                    padding-top: -20px;
+                                    padding-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .containTodoist {
+        margin-top: 70px;
+        .listInput {
+            margin-left: 40px;
+            input {
+                margin-left: 25px;
+                margin-right: 65px;
+            }
+            #btnAdd {
+                margin-left: -25px;
+            }
+        }
+        #btnClear {
+            left: 38.0%;
+        }
+        .showGame {
+            max-height: 90px;
+        }
+    }
+    .footer {
+        .send {
+            .fa-solid {
+                right: 4%;
+            }
+        }
+    }
 }

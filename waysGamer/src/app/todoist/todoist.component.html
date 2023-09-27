@@ -10,7 +10,7 @@
     <div class="showGame">
         <div class="detailGame">
             <div class="row" *ngIf="games">
-                <div class="col-lg-6 detail" *ngFor="let game of games, let i = index">
+                <div class="col-lg-6 col-md-4 col-sm-4 detail" *ngFor="let game of games, let i = index">
                     <p class="info">"{{game.title}} est un jeu {{game.type}} développé par {{game.studio}}" <button type="button" id="btnDelete" (click)="deleteGame(i)"><i class="fa-solid fa-trash"></i></button></p>
                 </div>
             </div>

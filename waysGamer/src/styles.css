@@ -30,8 +30,7 @@ body {
   margin-top: 30px;
 }
 .present .containPresent .row .listTester .row {
-  margin-left: 40px;
-  max-width: 390px;
+  margin-left: 10px;
 }
 .present .containPresent .row .listTester .row .test {
   height: 220px;
@@ -39,13 +38,14 @@ body {
 }
 .present .containPresent .row .listTester .row .test .img-fluid {
   height: 130px;
+  max-width: 160px;
   cursor: pointer;
   border-radius: 20px;
   border: 0px solid black;
 }
 .present .containPresent .row .aboutTester {
-  margin-top: 50px;
-  margin-left: -60px;
+  margin-top: 140px;
+  margin-right: -120px;
 }
 .present .containPresent .row .aboutTester .containTester .row .col-lg-4 .img-fluid {
   border-radius: 20px;
@@ -146,23 +146,6 @@ body {
 .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .youtube .fa-brands .fa-youtube {
   color: azure;
 }
-.present .containPresent .row .aboutTester .containTester .row .listVideo {
-  margin-top: 30px;
-}
-.present .containPresent .row .aboutTester .containTester .row .listVideo .row {
-  margin: 2px auto;
-  max-width: 1200px;
-  margin-right: 120px;
-}
-.present .containPresent .row .aboutTester .containTester .row .listVideo .row .video {
-  cursor: pointer;
-}
-.present .containPresent .row .aboutTester .containTester .row .listVideo .row .video a .img-fluid {
-  border-radius: 20px;
-  border: 0px solid black;
-  height: 190px;
-  max-width: 360px;
-}
 
 .containTodoist {
   margin: 20px auto;
@@ -218,7 +201,9 @@ body {
 }
 .containTodoist .showGame {
   overflow-y: auto;
-  max-height: 200px;
+  overflow-x: auto;
+  width: 100%;
+  max-height: 160px;
 }
 .containTodoist .showGame .detailGame .row {
   text-align: center;
@@ -262,7 +247,7 @@ body {
 .footer .send .fa-solid {
   position: absolute;
   top: 50%;
-  right: 1%;
+  right: 2%;
   transform: translateY(-50%);
 }
 .footer .send .fa-solid .fa-arrow-right {
@@ -276,4 +261,194 @@ body {
 @font-face {
   font-family: olneyLigth;
   src: url("/assets/fonts/olneyligth.otf");
+}
+@media screen and (max-width: 1440px) {
+  .present .containPresent .row .aboutTester {
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .listVideo {
+    margin-top: 10px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .listVideo .row {
+    margin: 2px auto;
+    margin-right: 80px;
+  }
+  .containTodoist {
+    margin: -4px auto;
+  }
+  .containTodoist .showGame {
+    max-height: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .present .containPresent .row .listTester {
+    overflow-x: auto;
+    max-height: 480px;
+    max-width: 150px;
+  }
+  .present .containPresent .row .listTester .row {
+    margin-left: 18px;
+  }
+  .present .containPresent .row .listTester .row .test {
+    width: 300px;
+  }
+  .present .containPresent .row .listTester .row .test .img-fluid {
+    height: 140px;
+  }
+  .present .containPresent .row .aboutTester {
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 60px;
+    max-width: 1000px;
+  }
+  .present .containPresent .row .aboutTester .containTester {
+    max-width: 1000px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-4 .img-fluid {
+    height: 220px;
+    max-width: 120px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .nameGamer {
+    font-size: 1.5em;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .storyGamer {
+    font-size: 1.4em;
+    margin-bottom: 4px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref {
+    margin-left: 8px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .facebook, .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitter, .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .twitch, .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref .row .youtube {
+    max-width: 50px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .listVideo {
+    display: none;
+  }
+  .containTodoist {
+    margin: -4px auto;
+  }
+  .containTodoist .listInput input {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .containTodoist .listInput #btnAdd {
+    margin-right: 10px;
+  }
+  .containTodoist #btnClear {
+    margin: 10px auto;
+    left: 44.2%;
+  }
+  .containTodoist .showGame {
+    max-height: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .present .containPresent .row .listTester {
+    margin: auto;
+    max-width: 490px;
+    text-align: center;
+  }
+  .present .containPresent .row .listTester .row {
+    margin: auto;
+    overflow: auto;
+    height: 280px;
+    text-align: center;
+  }
+  .present .containPresent .row .listTester .row .test {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .present .containPresent .row .listTester .row .test .img-fluid {
+    height: 260px;
+  }
+  .present .containPresent .row .aboutTester {
+    margin: -20px auto;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-4 {
+    display: none;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-4 .img-fluid {
+    display: none;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 {
+    text-align: center;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .storyGamer {
+    margin-bottom: -2px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref {
+    padding-top: -20px;
+    padding-bottom: 30px;
+  }
+  .containTodoist {
+    margin: 10px auto;
+  }
+  .footer .send .fa-solid {
+    right: 3%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .present .containPresent .row .listTester {
+    margin: auto;
+    max-width: 490px;
+    text-align: center;
+  }
+  .present .containPresent .row .listTester .row {
+    margin: auto;
+    overflow: auto;
+    height: 280px;
+    text-align: center;
+  }
+  .present .containPresent .row .listTester .row .test {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .present .containPresent .row .listTester .row .test .img-fluid {
+    height: 200px;
+    max-width: 380px;
+  }
+  .present .containPresent .row .aboutTester {
+    margin: -90px auto;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-4 {
+    display: none;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-4 .img-fluid {
+    display: none;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 {
+    text-align: center;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .storyGamer {
+    margin-bottom: -2px;
+  }
+  .present .containPresent .row .aboutTester .containTester .row .col-lg-8 .listHref {
+    padding-top: -20px;
+    padding-bottom: 30px;
+  }
+  .containTodoist {
+    margin-top: 70px;
+  }
+  .containTodoist .listInput {
+    margin-left: 40px;
+  }
+  .containTodoist .listInput input {
+    margin-left: 25px;
+    margin-right: 65px;
+  }
+  .containTodoist .listInput #btnAdd {
+    margin-left: -25px;
+  }
+  .containTodoist #btnClear {
+    left: 38%;
+  }
+  .containTodoist .showGame {
+    max-height: 90px;
+  }
+  .footer .send .fa-solid {
+    right: 4%;
+  }
 }/*# sourceMappingURL=styles.css.map */
